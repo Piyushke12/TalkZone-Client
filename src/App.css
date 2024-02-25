@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.apptitle {
+  justify-self: center;
+  color: rgb(0, 0, 0);
+}
+
+.homepage {
+  height: 682px;
+  display: grid;
+}
+
+.homepagebtn {
+  flex: 1 1;
+  margin: 5%;
+  padding: 2%;
+  border: 1px solid cyan;
+  border-radius: 5px;
+}
+
+.homepagebtn_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.home__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.formcontainer {
+  display: grid;
+  margin: 2%;
+  margin-bottom: 127px;
+}
+
+.home__header {
+  color: rgb(129, 129, 129);
+  margin-bottom: 30px;
+}
+
+.username__input {
+  width: 50%;
+  padding: 7px;
+}
+
+.input_label {
+  font-size: larger;
+  margin-top: 3%;
+}
+
+.roomname__input {
+  padding: 10px;
+  width: 50%;
+}
+
+.home__cta {
+  width: 30%;
+  margin: 13px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(67, 125, 233);
+  color: #F9F5EB;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#chatbodycontainer {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: grid;
+  justify-self: center;
+}
+
+#announcement {
+  margin: 3px;
+  justify-self: center;
+  border: solid 2px rgb(67, 125, 233);
+  border-radius: 10px;
+  padding: 3px;
+  font-weight: 200;
+}
+
+.title {
+  display: grid;
+  margin-inline-end: auto;
+}
+
+#announced_text {
+  margin: 0px;
+}
+
+.message_container {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  overflow-y: auto;
+}
+
+#inputmessage {
+  width: 100%;
+}
+
+.message_received {
+  height: fit-content;
+  justify-content: right;
+  width: max-content;
+  color: rgb(67, 125, 233);
+  background-color: white;
+  border: solid 2px rgb(67, 125, 233);
+  border-radius: 10px;
+  display: grid;
+  margin: 8px;
+  padding: 5px;
+}
+
+.message_sent {
+  height: fit-content;
+  margin: 8px;
+  padding: 5px;
+  justify-self: right;
+  color: white;
+  background-color: rgb(67, 125, 233);
+  border-radius: 10px;
+}
+
+.sender_name {
+  color: rgb(255, 255, 255);
+  margin: 1px;
+  justify-content: left;
+  font-weight: bold;
+}
+
+.receiver_name {
+  color: rgb(67, 125, 233);
+  margin: 1px;
+  justify-content: left;
+  font-weight: bold;
+}
+
+#typingstatus {
+  font-size: smaller;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.message_text {
+  margin: 1.5px;
+}
+
+#leavebtn {
+  margin: 5px;
+}
+
+.homepage_header {
+  display: grid;
+  width: 100%;
+}
+
+.profilepicture {
+  width: 5%;
+  height: 3%;
+  margin: 2%;
+  border-radius: 50%;
+}
+
+.form-inline {
+  display: flex;
+}
+
+.navbar-brand {
+  margin-top: 1%;
+  position: relative;
+  left: 6%;
+}
+
+.chatcontainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.chatList {
+  width: 22%;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.chatbody {
+  width: 78%;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: rgb(211, 210, 210);
+}
+
+.chatuser_picture {
+  margin: 2%;
+  width: 4%;
+  height: 8%;
+  border: 1px solid white;
+  border-radius: 50%;
+  float: left;
+}
+
+.chatname {
+  margin-top: 3%;
+  width: 29%;
+  float: left;
+}
+
+.leavegroupbtn {
+  float: right;
+  margin-top: 19%;
+  background-color: lightgrey;
+  height: fit-content;
+}
+
+.chatpage {
+  height: 500px;
+}
+
+.chatuserheader {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#chatform {
+  position: sticky;
+  top: 87%;
+  width: 100%;
+  display: flex;
+  margin: 0%;
+}
+
+.mychatstitle {
+  margin: 5% 6%;
+  color: white;
+}
+
+.chatListcontainer {
+  width: 21%;
+  background-color: rgb(211, 210, 210);
+  border-radius: 10px;
+  overflow: scroll;
+  margin: 2px;
+  overflow-x: hidden;
+}
+
+.chatListcontainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chatListcontainer::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.chatListcontainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.creategroupbtn {
+  position: relative;
+  margin: 5%;
+  padding: 1% 1%;
+  left: 5%;
+}
+
+.creategroupbtn:hover {
+  background-color: darkgray;
+}
+
+.chatlistheader {
+  display: flex;
+  flex-direction: row;
+}
+
+.chats {
+  cursor: pointer;
+}
+
+.chatlistMessage {
+  font-size: small;
+    width: max-content;
+    font-weight: 800;
+}
+
+.chats:hover {
+  background-color: rgb(207, 206, 206);
+}
+
+.chats p {
+  margin: 0;
+}
+
+.chatsearchinput {
+  padding-right: 6rem;
+  margin-right: 4%;
+}
+
+.addtogroupchecklist {
+  margin: 2%;
+}
+
+.groupnamelabel {
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.groupcustomdropdown {
+  align-self: center;
+}
+
+.groupcustomdropdown::after {
+  display: none;
+}
+
+.chat_navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.groupcontrol {
+  display: flex;
+  flex-direction: row;
+  margin-left: 52%;
+}
+
+.addmemberbtn {
+  margin-top: 2%;
+  float: right;
+}
